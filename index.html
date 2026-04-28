@@ -14,6 +14,10 @@
   <!-- Iconify web component -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2/dist/iconify-icon.min.js" defer></script>
 
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init({ publicKey: '1Q5KP5aAZKbz-0N9M' });</script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
@@ -694,17 +698,17 @@
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="nome">Nome</label>
-                <input class="form-input" id="nome" name="nome" type="text" placeholder="Seu nome completo" autocomplete="name" required/>
+                <input class="form-input" id="nome" name="from_name" type="text" placeholder="Seu nome completo" autocomplete="name" required/>
               </div>
               <div class="form-group">
                 <label class="form-label" for="telefone">Telefone</label>
-                <input class="form-input" id="telefone" name="telefone" type="tel" placeholder="(61) 99999-9999" autocomplete="tel"/>
+                <input class="form-input" id="telefone" name="phone" type="tel" placeholder="(61) 99999-9999" autocomplete="tel"/>
               </div>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="email">E-mail</label>
-              <input class="form-input" id="email" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required/>
+              <input class="form-input" id="email" name="from_email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required/>
             </div>
 
             <div class="form-group">
@@ -720,7 +724,7 @@
 
             <div class="form-group">
               <label class="form-label" for="mensagem">Mensagem</label>
-              <textarea class="form-input" id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente seu caso ou dúvida..."></textarea>
+              <textarea class="form-input" id="mensagem" name="message" rows="5" placeholder="Descreva brevemente seu caso ou dúvida..."></textarea>
             </div>
 
             <button type="submit" class="form-submit glass-button-primary">
