@@ -153,7 +153,15 @@
     btn.innerHTML = 'Enviando…';
     btn.disabled = true;
 
-    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+    const params = {
+      from_name:     form.querySelector('[name="from_name"]').value.trim(),
+      from_email:    form.querySelector('[name="from_email"]').value.trim(),
+      phone:         form.querySelector('[name="phone"]').value.trim(),
+      especialidade: form.querySelector('[name="especialidade"]').value,
+      message:       form.querySelector('[name="message"]').value.trim(),
+    };
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
       .then(() => {
         btn.innerHTML = 'Mensagem enviada! ✓';
         btn.style.background = 'linear-gradient(180deg, #d1fae5, #a7f3d0)';
@@ -168,13 +176,14 @@
       })
       .catch((err) => {
         console.error('EmailJS error:', err);
-        btn.innerHTML = 'Erro ao enviar. Tente novamente.';
+        const detail = err?.text || err?.message || JSON.stringify(err);
+        btn.innerHTML = `Erro: ${detail}`;
         btn.style.background = 'linear-gradient(180deg, #fee2e2, #fecaca)';
         setTimeout(() => {
           btn.innerHTML = original;
           btn.style.background = '';
           btn.disabled = false;
-        }, 4000);
+        }, 6000);
       });
   });
 
