@@ -148,17 +148,26 @@
       return;
     }
 
+    const captchaToken = hcaptcha.getResponse();
+    const captchaError = form.querySelector('.captcha-error');
+    if (!captchaToken) {
+      captchaError.style.display = 'block';
+      return;
+    }
+    captchaError.style.display = 'none';
+
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.innerHTML;
     btn.innerHTML = 'Enviando…';
     btn.disabled = true;
 
     const params = {
-      from_name:     form.querySelector('[name="from_name"]').value.trim(),
-      from_email:    form.querySelector('[name="from_email"]').value.trim(),
-      phone:         form.querySelector('[name="phone"]').value.trim(),
-      especialidade: form.querySelector('[name="especialidade"]').value,
-      message:       form.querySelector('[name="message"]').value.trim(),
+      from_name:            form.querySelector('[name="from_name"]').value.trim(),
+      from_email:           form.querySelector('[name="from_email"]').value.trim(),
+      phone:                form.querySelector('[name="phone"]').value.trim(),
+      especialidade:        form.querySelector('[name="especialidade"]').value,
+      message:              form.querySelector('[name="message"]').value.trim(),
+      'h-captcha-response': captchaToken,
     };
 
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
@@ -166,6 +175,7 @@
         btn.innerHTML = 'Mensagem enviada! ✓';
         btn.style.background = 'linear-gradient(180deg, #d1fae5, #a7f3d0)';
         form.reset();
+        hcaptcha.reset();
         inputs.forEach(i => { i.classList.remove('input-ok', 'input-error'); });
         form.querySelectorAll('.field-error').forEach(el => el.remove());
         setTimeout(() => {
@@ -176,6 +186,7 @@
       })
       .catch((err) => {
         console.error('EmailJS error:', err);
+        hcaptcha.reset();
         const detail = err?.text || err?.message || JSON.stringify(err);
         btn.innerHTML = `Erro: ${detail}`;
         btn.style.background = 'linear-gradient(180deg, #fee2e2, #fecaca)';

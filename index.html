@@ -18,6 +18,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init({ publicKey: '1Q5KP5aAZKbz-0N9M' });</script>
 
+  <!-- hCaptcha -->
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
@@ -725,6 +728,11 @@
             <div class="form-group">
               <label class="form-label" for="mensagem">Mensagem</label>
               <textarea class="form-input" id="mensagem" name="message" rows="5" placeholder="Descreva brevemente seu caso ou dúvida..."></textarea>
+            </div>
+
+            <div class="captcha-wrapper">
+              <div class="h-captcha" data-sitekey="fd3a8848-b82e-4ba0-adc2-2b58ed2ac60a"></div>
+              <span class="field-error captcha-error" style="display:none;">Por favor, confirme que você não é um robô.</span>
             </div>
 
             <button type="submit" class="form-submit glass-button-primary">
