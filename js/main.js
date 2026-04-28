@@ -80,7 +80,7 @@
      FORM VALIDATION & SUBMIT
   ══════════════════════════════════════ */
   const EMAILJS_SERVICE_ID  = 'service_8ajr3ez';
-  const EMAILJS_TEMPLATE_ID = 'template_h9wz0f9';
+  const EMAILJS_TEMPLATE_ID = 'template_8qlf0vs';
 
   const RULES = {
     from_name:    { required: true, minLen: 3,  label: 'Nome',        msg: 'Informe seu nome completo (mínimo 3 caracteres).' },
