@@ -85,7 +85,7 @@
   const RULES = {
     from_name:    { required: true, minLen: 3,  label: 'Nome',        msg: 'Informe seu nome completo (mínimo 3 caracteres).' },
     from_email:   { required: true, email: true, label: 'E-mail',     msg: 'Informe um e-mail válido.' },
-    phone:        { required: false, phone: true, label: 'Telefone',  msg: 'Informe um telefone válido, ex: (61) 99999-9999.' },
+    phone:        { required: true,  phone: true, label: 'Telefone',  msg: 'Informe um telefone válido, ex: (61) 99999-9999.' },
     especialidade:{ required: true,  label: 'Especialidade',          msg: 'Selecione uma especialidade.' },
     message:      { required: true, minLen: 10, label: 'Mensagem',    msg: 'Escreva uma mensagem (mínimo 10 caracteres).' },
   };
