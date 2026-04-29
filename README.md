@@ -142,6 +142,6 @@ vercel --prod
 
 <div align="center">
 
-Desenvolvido com cuidado por **Eduardo Siquieroli**
+Desenvolvido por **Eduardo Siquieroli**
 
 </div>
