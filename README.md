@@ -6,13 +6,13 @@
 
 **Ortodontia · Harmonização Orofacial · Brasília, DF**
 
-[![Deploy](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://cristinaabrao-landing.vercel.app)
+[![Deploy](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://landing-psi-ochre.vercel.app/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Ver Site ao Vivo](https://cristinaabrao-landing.vercel.app) · [Agendar Consulta](https://cristinaabrao-landing.vercel.app/#contato)
+[Ver Site ao Vivo](https://landing-psi-ochre.vercel.app/) · [Agendar Consulta](https://landing-psi-ochre.vercel.app/#contato)
 
 </div>
 
