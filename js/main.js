@@ -148,10 +148,11 @@
       return;
     }
 
-    const captchaToken = hcaptcha.getResponse();
     const captchaError = form.querySelector('.captcha-error');
+    const captchaToken = (typeof hcaptcha !== 'undefined') ? hcaptcha.getResponse() : '';
     if (!captchaToken) {
       captchaError.style.display = 'block';
+      captchaError.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
     captchaError.style.display = 'none';
