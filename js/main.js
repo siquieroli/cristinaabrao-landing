@@ -83,23 +83,26 @@
   const EMAILJS_TEMPLATE_ID = 'template_8qlf0vs';
 
   const RULES = {
-    from_name:    { required: true, minLen: 3,  label: 'Nome',        msg: 'Informe seu nome completo (mínimo 3 caracteres).' },
-    from_email:   { required: true, email: true, label: 'E-mail',     msg: 'Informe um e-mail válido.' },
-    phone:        { required: true,  phone: true, label: 'Telefone',  msg: 'Informe um telefone válido, ex: (61) 99999-9999.' },
-    especialidade:{ required: true,  label: 'Especialidade',          msg: 'Selecione uma especialidade.' },
-    message:      { required: true, minLen: 10, label: 'Mensagem',    msg: 'Escreva uma mensagem (mínimo 10 caracteres).' },
+    from_name:    { required: true, minLen: 3,  msgKey: 'val.name' },
+    from_email:   { required: true, email: true, msgKey: 'val.email' },
+    phone:        { required: true, phone: true, msgKey: 'val.phone' },
+    especialidade:{ required: true,              msgKey: 'val.spec' },
+    message:      { required: true, minLen: 10,  msgKey: 'val.msg' },
   };
+
+  function tm(key) { return window.i18n ? window.i18n.t(key) : key; }
 
   function validate(input) {
     const rule = RULES[input.name];
     if (!rule) return true;
 
     const val = input.value.trim();
+    const msg = tm(rule.msgKey);
 
-    if (rule.required && val === '')          return setError(input, rule.msg);
-    if (rule.minLen  && val.length < rule.minLen && val !== '') return setError(input, rule.msg);
-    if (rule.email   && val !== '' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) return setError(input, rule.msg);
-    if (rule.phone   && val !== '' && val.replace(/\D/g,'').length < 10)        return setError(input, rule.msg);
+    if (rule.required && val === '')          return setError(input, msg);
+    if (rule.minLen  && val.length < rule.minLen && val !== '') return setError(input, msg);
+    if (rule.email   && val !== '' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) return setError(input, msg);
+    if (rule.phone   && val !== '' && val.replace(/\D/g,'').length < 10)        return setError(input, msg);
 
     return clearError(input);
   }
@@ -159,7 +162,7 @@
 
     const btn = form.querySelector('button[type="submit"]');
     const original = btn.innerHTML;
-    btn.innerHTML = 'Enviando…';
+    btn.innerHTML = tm('form.sending');
     btn.disabled = true;
 
     const params = {
@@ -173,7 +176,7 @@
 
     emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
       .then(() => {
-        btn.innerHTML = 'Mensagem enviada! ✓';
+        btn.innerHTML = tm('form.sent');
         btn.style.background = 'linear-gradient(180deg, #d1fae5, #a7f3d0)';
         form.reset();
         hcaptcha.reset();

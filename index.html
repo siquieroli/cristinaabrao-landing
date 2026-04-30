@@ -6,6 +6,10 @@
   <meta name="description" content="Dra. Cristina S. Abrão — Ortodontista e Especialista em Harmonização Orofacial. Mais de 30 anos de experiência em Brasília, DF."/>
   <title>Dra. Cristina Abrão — Ortodontia &amp; Harmonização Orofacial</title>
 
+  <!-- Favicons -->
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="assets/images/logo.svg"/>
+
   <!-- Google Fonts — Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
@@ -42,15 +46,21 @@
       </div>
     </a>
 
-    <nav class="navbar-links" aria-label="Seções">
-      <a href="#inicio" class="active">Início</a>
-      <a href="#especialidades">Especialidades</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#formacao">Formação</a>
-      <a href="#contato">Contato</a>
+    <nav class="navbar-links" data-i18n-aria="nav.aria" aria-label="Seções">
+      <a href="#inicio" class="active" data-i18n="nav.inicio">Início</a>
+      <a href="#especialidades" data-i18n="nav.especialidades">Especialidades</a>
+      <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+      <a href="#formacao" data-i18n="nav.formacao">Formação</a>
+      <a href="#contato" data-i18n="nav.contato">Contato</a>
     </nav>
 
-    <a href="#contato" class="navbar-cta glass-button-primary">Agendar Consulta</a>
+    <div class="lang-switcher" aria-label="Select language / Idioma / Langue">
+      <button class="lang-btn active" data-lang="pt" title="Português">🇧🇷</button>
+      <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+      <button class="lang-btn" data-lang="fr" title="Français">🇫🇷</button>
+    </div>
+
+    <a href="#contato" class="navbar-cta glass-button-primary" data-i18n="nav.cta">Agendar Consulta</a>
 
     <button class="navbar-mobile-toggle" aria-label="Abrir menu" id="menu-toggle">
       <iconify-icon icon="solar:hamburger-menu-linear" width="22"></iconify-icon>
@@ -80,15 +90,15 @@
           <div class="hero-badge">
             <span class="badge">
               <iconify-icon icon="solar:diploma-bold-duotone" width="15" aria-hidden="true"></iconify-icon>
-              Ortodontia &amp; Harmonização Orofacial
+              <span data-i18n="hero.badge">Ortodontia &amp; Harmonização Orofacial</span>
             </span>
           </div>
 
           <img src="assets/images/logo.svg" alt="Dra. Cristina Abrão — Ortodontia" class="hero-logo"/>
 
-          <p class="hero-credentials">MSc · Brasília, DF · Membro CRO-DF desde 1993</p>
+          <p class="hero-credentials" data-i18n="hero.credentials">MSc · Brasília, DF · Membro CRO-DF desde 1993</p>
 
-          <p class="hero-body">
+          <p class="hero-body" data-i18n="hero.body">
             Mais de 30 anos transformando sorrisos com excelência científica e cuidado humano.
             Especialista em Ortodontia, Harmonização Orofacial e instrutora clínica de pós-graduação —
             comprometida com resultados duradouros e tratamentos personalizados.
@@ -96,10 +106,10 @@
 
           <div class="hero-actions">
             <a href="#contato" class="hero-cta-primary glass-button-primary">
-              Agendar Consulta
+              <span data-i18n="hero.cta1">Agendar Consulta</span>
               <iconify-icon icon="solar:arrow-right-linear" width="16" aria-hidden="true"></iconify-icon>
             </a>
-            <a href="#especialidades" class="hero-cta-secondary">
+            <a href="#especialidades" class="hero-cta-secondary" data-i18n="hero.cta2">
               Ver Especialidades
             </a>
           </div>
@@ -123,8 +133,8 @@
                 <iconify-icon icon="solar:shield-check-bold-duotone" width="22" aria-hidden="true"></iconify-icon>
               </div>
               <div>
-                <p class="hero-stat-title">Especialista Certificada</p>
-                <p class="hero-stat-sub">Mestrado · UnB · 3 Especializações</p>
+                <p class="hero-stat-title" data-i18n="hero.stat.title">Especialista Certificada</p>
+                <p class="hero-stat-sub" data-i18n="hero.stat.sub">Mestrado · UnB · 3 Especializações</p>
               </div>
             </div>
           </div>
@@ -142,15 +152,15 @@
   <div class="stats-grid glass-panel">
     <div class="stat-item" data-animate>
       <span class="stat-number">30+</span>
-      <span class="stat-label">Anos de Experiência</span>
+      <span class="stat-label" data-i18n="stats.years">Anos de Experiência</span>
     </div>
     <div class="stat-item" data-animate>
       <span class="stat-number">3</span>
-      <span class="stat-label">Especializações</span>
+      <span class="stat-label" data-i18n="stats.specs">Especializações</span>
     </div>
     <div class="stat-item" data-animate>
       <span class="stat-number">MSc</span>
-      <span class="stat-label">Mestrado · UnB</span>
+      <span class="stat-label" data-i18n="stats.msc">Mestrado · UnB</span>
     </div>
   </div>
 </div>
@@ -164,9 +174,9 @@
   <div class="container">
 
     <div data-animate>
-      <span class="eyebrow">Áreas de Atuação</span>
-      <h2 class="section-heading" id="especialidades-heading">Especialidades</h2>
-      <p class="section-sub">
+      <span class="eyebrow" data-i18n="esp.eyebrow">Áreas de Atuação</span>
+      <h2 class="section-heading" id="especialidades-heading" data-i18n="esp.heading">Especialidades</h2>
+      <p class="section-sub" data-i18n="esp.sub">
         Tratamentos de alto padrão, fundamentados em ciência e executados com atenção
         individualizada a cada paciente.
       </p>
@@ -180,14 +190,14 @@
           <div class="service-icon">
             <iconify-icon icon="ph:tooth-bold" width="28" aria-hidden="true"></iconify-icon>
           </div>
-          <h3 class="service-title">Ortodontia</h3>
-          <p class="service-body">
+          <h3 class="service-title" data-i18n="esp.ortho.title">Ortodontia</h3>
+          <p class="service-body" data-i18n="esp.ortho.body">
             Especialização pela UNESP e mais de 20 anos de prática clínica em Brasília.
             Tratamentos com aparelhos fixos e alinhadores para correção de má-oclusões,
             com foco em estética e funcionalidade a longo prazo.
           </p>
           <a href="#contato" class="service-link">
-            Agendar avaliação
+            <span data-i18n="esp.ortho.link">Agendar avaliação</span>
             <iconify-icon icon="solar:arrow-right-linear" width="14" aria-hidden="true"></iconify-icon>
           </a>
         </div>
@@ -199,14 +209,14 @@
           <div class="service-icon">
             <iconify-icon icon="solar:magic-stick-3-bold-duotone" width="28" aria-hidden="true"></iconify-icon>
           </div>
-          <h3 class="service-title">Harmonização Orofacial</h3>
-          <p class="service-body">
+          <h3 class="service-title" data-i18n="esp.harm.title">Harmonização Orofacial</h3>
+          <p class="service-body" data-i18n="esp.harm.body">
             Especialização em Harmonização Orofacial pela FACSETE (2021–2023).
             Procedimentos estéticos minimamente invasivos para realçar e equilibrar
             os traços faciais com naturalidade e segurança.
           </p>
           <a href="#contato" class="service-link">
-            Agendar avaliação
+            <span data-i18n="esp.harm.link">Agendar avaliação</span>
             <iconify-icon icon="solar:arrow-right-linear" width="14" aria-hidden="true"></iconify-icon>
           </a>
         </div>
@@ -218,14 +228,14 @@
           <div class="service-icon">
             <iconify-icon icon="solar:medal-ribbons-star-bold-duotone" width="28" aria-hidden="true"></iconify-icon>
           </div>
-          <h3 class="service-title">Implantodontia</h3>
-          <p class="service-body">
+          <h3 class="service-title" data-i18n="esp.impl.title">Implantodontia</h3>
+          <p class="service-body" data-i18n="esp.impl.body">
             Formação complementar em Implantodontia pelo CEI (2013–2014, 240 horas).
             Integração com planejamento ortodôntico para resultados funcionais e
             estéticos completos.
           </p>
           <a href="#contato" class="service-link">
-            Agendar avaliação
+            <span data-i18n="esp.impl.link">Agendar avaliação</span>
             <iconify-icon icon="solar:arrow-right-linear" width="14" aria-hidden="true"></iconify-icon>
           </a>
         </div>
@@ -247,48 +257,48 @@
       <!-- Coluna de texto -->
       <div class="about-content" data-animate>
         <div>
-          <span class="eyebrow">Sobre</span>
-          <h2 class="section-heading" id="sobre-heading">
+          <span class="eyebrow" data-i18n="sobre.eyebrow">Sobre</span>
+          <h2 class="section-heading" id="sobre-heading" data-i18n-html="sobre.heading">
             Ciência, cuidado<br/>
             <span class="text-gradient">e excelência clínica</span>
           </h2>
         </div>
 
-        <p class="about-body">
+        <p class="about-body" data-i18n="sobre.body1">
           Graduada em Odontologia pela Universidade Federal de Uberlândia (1993), a Dra. Cristina
           construiu uma trajetória marcada pela busca constante de conhecimento. Especializou-se
           em Ortodontia e Ortopedia Facial pela UNESP, obteve o título de Mestre pela Universidade
           de Brasília e, mais recentemente, concluiu a especialização em Harmonização Orofacial.
         </p>
 
-        <p class="about-body">
+        <p class="about-body" data-i18n="sobre.body2">
           Além da clínica particular que mantém em Brasília desde 2004, atuou como instrutora
           clínica de pós-graduação em instituições como IOA, Uningá e Clínica Privada Lago Sul,
           formando novos especialistas em ortodontia por mais de 14 anos.
         </p>
 
         <div>
-          <p class="eyebrow" style="margin-bottom: 0.75rem;">Áreas de Interesse</p>
+          <p class="eyebrow" style="margin-bottom: 0.75rem;" data-i18n="sobre.interests">Áreas de Interesse</p>
           <div class="about-tags">
-            <span class="about-tag">Ortodontia</span>
-            <span class="about-tag">Ortopedia Facial</span>
-            <span class="about-tag">Harmonização Orofacial</span>
-            <span class="about-tag">Implantodontia</span>
-            <span class="about-tag">Cefalometria 3D</span>
-            <span class="about-tag">Patologia Forense</span>
+            <span class="about-tag" data-i18n="tag.ortho">Ortodontia</span>
+            <span class="about-tag" data-i18n="tag.ortoped">Ortopedia Facial</span>
+            <span class="about-tag" data-i18n="tag.harm">Harmonização Orofacial</span>
+            <span class="about-tag" data-i18n="tag.impl">Implantodontia</span>
+            <span class="about-tag" data-i18n="tag.cef">Cefalometria 3D</span>
+            <span class="about-tag" data-i18n="tag.pat">Patologia Forense</span>
           </div>
         </div>
 
         <div>
-          <p class="eyebrow" style="margin-bottom: 0.75rem;">Afiliações Profissionais</p>
+          <p class="eyebrow" style="margin-bottom: 0.75rem;" data-i18n="sobre.affiliations">Afiliações Profissionais</p>
           <div class="about-list">
             <div class="about-list-item">
               <div class="about-list-dot"></div>
-              <span>CRO-DF — Conselho Regional de Odontologia do Distrito Federal (desde 1993)</span>
+              <span data-i18n="sobre.affil1">CRO-DF — Conselho Regional de Odontologia do Distrito Federal (desde 1993)</span>
             </div>
             <div class="about-list-item">
               <div class="about-list-dot"></div>
-              <span>SORT — Sociedade de Ortodontia do Distrito Federal (conselheira 2000–2002)</span>
+              <span data-i18n="sobre.affil2">SORT — Sociedade de Ortodontia do Distrito Federal (conselheira 2000–2002)</span>
             </div>
           </div>
         </div>
@@ -303,8 +313,8 @@
               <iconify-icon icon="solar:diploma-bold-duotone" width="24" aria-hidden="true"></iconify-icon>
             </div>
             <div class="credential-text">
-              <strong>Mestrado · UnB</strong>
-              <span>Universidade de Brasília, 2015–2017<br/>Bolsista CAPES</span>
+              <strong data-i18n="cred.1.title">Mestrado · UnB</strong>
+              <span data-i18n-html="cred.1.sub">Universidade de Brasília, 2015–2017<br/>Bolsista CAPES</span>
             </div>
           </div>
 
@@ -313,8 +323,8 @@
               <iconify-icon icon="solar:medal-ribbons-star-bold-duotone" width="24" aria-hidden="true"></iconify-icon>
             </div>
             <div class="credential-text">
-              <strong>3 Especializações</strong>
-              <span>Ortodontia (UNESP) · Harmonização Orofacial (FACSETE) · Implantodontia (CEI)</span>
+              <strong data-i18n="cred.2.title">3 Especializações</strong>
+              <span data-i18n="cred.2.sub">Ortodontia (UNESP) · Harmonização Orofacial (FACSETE) · Implantodontia (CEI)</span>
             </div>
           </div>
 
@@ -323,8 +333,8 @@
               <iconify-icon icon="solar:buildings-bold-duotone" width="24" aria-hidden="true"></iconify-icon>
             </div>
             <div class="credential-text">
-              <strong>Instrutora de Pós-Graduação</strong>
-              <span>IOA · Uningá · Clínica Lago Sul<br/>+14 anos formando especialistas</span>
+              <strong data-i18n="cred.3.title">Instrutora de Pós-Graduação</strong>
+              <span data-i18n-html="cred.3.sub">IOA · Uningá · Clínica Lago Sul<br/>+14 anos formando especialistas</span>
             </div>
           </div>
 
@@ -333,8 +343,8 @@
               <iconify-icon icon="solar:shield-check-bold-duotone" width="24" aria-hidden="true"></iconify-icon>
             </div>
             <div class="credential-text">
-              <strong>Membro CRO-DF</strong>
-              <span>Conselho Regional de Odontologia<br/>desde 1993</span>
+              <strong data-i18n="cred.4.title">Membro CRO-DF</strong>
+              <span data-i18n-html="cred.4.sub">Conselho Regional de Odontologia<br/>desde 1993</span>
             </div>
           </div>
 
@@ -343,8 +353,8 @@
               <iconify-icon icon="solar:clock-circle-bold-duotone" width="24" aria-hidden="true"></iconify-icon>
             </div>
             <div class="credential-text">
-              <strong>+30 anos de experiência</strong>
-              <span>Consultório particular em Brasília<br/>desde 2004</span>
+              <strong data-i18n="cred.5.title">+30 anos de experiência</strong>
+              <span data-i18n-html="cred.5.sub">Consultório particular em Brasília<br/>desde 2004</span>
             </div>
           </div>
         </div>
@@ -364,9 +374,9 @@
   <div class="container">
 
     <div data-animate>
-      <span class="eyebrow">Trajetória Acadêmica</span>
-      <h2 class="section-heading" id="formacao-heading">Formação</h2>
-      <p class="section-sub">
+      <span class="eyebrow" data-i18n="edu.eyebrow">Trajetória Acadêmica</span>
+      <h2 class="section-heading" id="formacao-heading" data-i18n="edu.heading">Formação</h2>
+      <p class="section-sub" data-i18n="edu.sub">
         Uma base acadêmica sólida, construída ao longo de décadas nas melhores instituições do Brasil.
       </p>
     </div>
@@ -375,7 +385,7 @@
 
       <!-- Graduação e Pós -->
       <div data-animate>
-        <p class="eyebrow" style="margin-bottom: 1.5rem;">Graduação &amp; Pós-Graduação</p>
+        <p class="eyebrow" style="margin-bottom: 1.5rem;" data-i18n="edu.grad">Graduação &amp; Pós-Graduação</p>
         <div class="timeline">
 
           <div class="timeline-item">
@@ -385,9 +395,9 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">2021 – 2023</p>
-              <h3 class="timeline-title">Especialização em Harmonização Orofacial</h3>
-              <p class="timeline-subtitle">Faculdade de Sete Lagoas (FACSETE) — Uberlândia, MG</p>
-              <span class="timeline-tag">Especialização</span>
+              <h3 class="timeline-title" data-i18n="edu.1.title">Especialização em Harmonização Orofacial</h3>
+              <p class="timeline-subtitle" data-i18n="edu.1.sub">Faculdade de Sete Lagoas (FACSETE) — Uberlândia, MG</p>
+              <span class="timeline-tag" data-i18n="edu.1.tag">Especialização</span>
             </div>
           </div>
 
@@ -398,9 +408,9 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">2015 – 2017</p>
-              <h3 class="timeline-title">Mestrado em Odontologia</h3>
-              <p class="timeline-subtitle">Universidade de Brasília (UnB) — Brasília, DF<br/>Bolsista CAPES</p>
-              <span class="timeline-tag">Mestrado (MSc)</span>
+              <h3 class="timeline-title" data-i18n="edu.2.title">Mestrado em Odontologia</h3>
+              <p class="timeline-subtitle" data-i18n-html="edu.2.sub">Universidade de Brasília (UnB) — Brasília, DF<br/>Bolsista CAPES</p>
+              <span class="timeline-tag" data-i18n="edu.2.tag">Mestrado (MSc)</span>
             </div>
           </div>
 
@@ -411,9 +421,9 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">1996 – 1999</p>
-              <h3 class="timeline-title">Especialização em Ortodontia e Ortopedia Facial</h3>
-              <p class="timeline-subtitle">Universidade Estadual Paulista (UNESP) — Araçatuba, SP</p>
-              <span class="timeline-tag">Especialização</span>
+              <h3 class="timeline-title" data-i18n="edu.3.title">Especialização em Ortodontia e Ortopedia Facial</h3>
+              <p class="timeline-subtitle" data-i18n="edu.3.sub">Universidade Estadual Paulista (UNESP) — Araçatuba, SP</p>
+              <span class="timeline-tag" data-i18n="edu.3.tag">Especialização</span>
             </div>
           </div>
 
@@ -424,9 +434,9 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">1989 – 1993</p>
-              <h3 class="timeline-title">Graduação em Odontologia</h3>
-              <p class="timeline-subtitle">Universidade Federal de Uberlândia (UFU) — Uberlândia, MG</p>
-              <span class="timeline-tag">Graduação</span>
+              <h3 class="timeline-title" data-i18n="edu.4.title">Graduação em Odontologia</h3>
+              <p class="timeline-subtitle" data-i18n="edu.4.sub">Universidade Federal de Uberlândia (UFU) — Uberlândia, MG</p>
+              <span class="timeline-tag" data-i18n="edu.4.tag">Graduação</span>
             </div>
           </div>
 
@@ -435,7 +445,7 @@
 
       <!-- Treinamento Adicional -->
       <div data-animate>
-        <p class="eyebrow" style="margin-bottom: 1.5rem;">Treinamento Clínico Adicional</p>
+        <p class="eyebrow" style="margin-bottom: 1.5rem;" data-i18n="edu.training">Treinamento Clínico Adicional</p>
         <div class="timeline">
 
           <div class="timeline-item">
@@ -445,8 +455,8 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">2013 – 2014</p>
-              <h3 class="timeline-title">Educação Continuada em Implantodontia</h3>
-              <p class="timeline-subtitle">CEI — Centro de Ensino em Implantodontia, Brasília, DF</p>
+              <h3 class="timeline-title" data-i18n="train.1.title">Educação Continuada em Implantodontia</h3>
+              <p class="timeline-subtitle" data-i18n="train.1.sub">CEI — Centro de Ensino em Implantodontia, Brasília, DF</p>
               <span class="timeline-tag">240 horas</span>
             </div>
           </div>
@@ -458,8 +468,8 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">2004</p>
-              <h3 class="timeline-title">Patologia Forense</h3>
-              <p class="timeline-subtitle">IBDM — Instituto Brasileiro de Direito Médico e Biodireito, Brasília, DF</p>
+              <h3 class="timeline-title" data-i18n="train.2.title">Patologia Forense</h3>
+              <p class="timeline-subtitle" data-i18n="train.2.sub">IBDM — Instituto Brasileiro de Direito Médico e Biodireito, Brasília, DF</p>
               <span class="timeline-tag">156 horas</span>
             </div>
           </div>
@@ -471,8 +481,8 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">1996 – 1998</p>
-              <h3 class="timeline-title">Educação Continuada em Ortodontia Preventiva</h3>
-              <p class="timeline-subtitle">UNESP — São Paulo, SP</p>
+              <h3 class="timeline-title" data-i18n="train.3.title">Educação Continuada em Ortodontia Preventiva</h3>
+              <p class="timeline-subtitle" data-i18n="train.3.sub">UNESP — São Paulo, SP</p>
               <span class="timeline-tag">1000 horas</span>
             </div>
           </div>
@@ -484,8 +494,8 @@
             </div>
             <div class="timeline-content">
               <p class="timeline-year">1995 – 1996</p>
-              <h3 class="timeline-title">Ortodontia Preventiva e Interceptiva</h3>
-              <p class="timeline-subtitle">UNESP — Pré-clínica e Clínica</p>
+              <h3 class="timeline-title" data-i18n="train.4.title">Ortodontia Preventiva e Interceptiva</h3>
+              <p class="timeline-subtitle" data-i18n="train.4.sub">UNESP — Pré-clínica e Clínica</p>
               <span class="timeline-tag">236 horas</span>
             </div>
           </div>
@@ -506,8 +516,8 @@
   <div class="container">
 
     <div data-animate>
-      <span class="eyebrow">Trajetória Profissional</span>
-      <h2 class="section-heading" id="experiencia-heading">Experiência</h2>
+      <span class="eyebrow" data-i18n="exp.eyebrow">Trajetória Profissional</span>
+      <h2 class="section-heading" id="experiencia-heading" data-i18n="exp.heading">Experiência</h2>
     </div>
 
     <div class="timeline" style="margin-top: 3rem; max-width: 52rem;" data-animate>
@@ -519,9 +529,9 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">2004 – presente</p>
-          <h3 class="timeline-title">Ortodontista — Consultório Particular</h3>
-          <p class="timeline-subtitle">Setor Sudoeste, Brasília, DF</p>
-          <span class="timeline-tag">Atual</span>
+          <h3 class="timeline-title" data-i18n="exp.1.title">Ortodontista — Consultório Particular</h3>
+          <p class="timeline-subtitle" data-i18n="exp.1.sub">Setor Sudoeste, Brasília, DF</p>
+          <span class="timeline-tag" data-i18n="exp.1.tag">Atual</span>
         </div>
       </div>
 
@@ -532,8 +542,8 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">2022 – 2024</p>
-          <h3 class="timeline-title">Instrutora Clínica de Pós-Graduação</h3>
-          <p class="timeline-subtitle">IOA — Instituto de Odontologia das Américas, João Pessoa, PB<br/>Especialização em Ortodontia</p>
+          <h3 class="timeline-title" data-i18n="exp.2.title">Instrutora Clínica de Pós-Graduação</h3>
+          <p class="timeline-subtitle" data-i18n-html="exp.2.sub">IOA — Instituto de Odontologia das Américas, João Pessoa, PB<br/>Especialização em Ortodontia</p>
         </div>
       </div>
 
@@ -544,8 +554,8 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">2019 – 2022</p>
-          <h3 class="timeline-title">Instrutora Clínica de Pós-Graduação</h3>
-          <p class="timeline-subtitle">IOA — Instituto de Odontologia das Américas, Brasília, DF<br/>Especialização em Ortodontia</p>
+          <h3 class="timeline-title" data-i18n="exp.3.title">Instrutora Clínica de Pós-Graduação</h3>
+          <p class="timeline-subtitle" data-i18n-html="exp.3.sub">IOA — Instituto de Odontologia das Américas, Brasília, DF<br/>Especialização em Ortodontia</p>
         </div>
       </div>
 
@@ -556,8 +566,8 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">2010 – 2015</p>
-          <h3 class="timeline-title">Instrutora Clínica de Pós-Graduação</h3>
-          <p class="timeline-subtitle">Universidade de Maringá (Uningá) — Campus Brasília, DF<br/>Especialização em Ortodontia</p>
+          <h3 class="timeline-title" data-i18n="exp.4.title">Instrutora Clínica de Pós-Graduação</h3>
+          <p class="timeline-subtitle" data-i18n-html="exp.4.sub">Universidade de Maringá (Uningá) — Campus Brasília, DF<br/>Especialização em Ortodontia</p>
         </div>
       </div>
 
@@ -568,8 +578,8 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">2005 – 2019</p>
-          <h3 class="timeline-title">Instrutora Clínica de Pós-Graduação</h3>
-          <p class="timeline-subtitle">Clínica Privada Lago Sul, Brasília, DF — Curso Modular Ertty Systems</p>
+          <h3 class="timeline-title" data-i18n="exp.5.title">Instrutora Clínica de Pós-Graduação</h3>
+          <p class="timeline-subtitle" data-i18n="exp.5.sub">Clínica Privada Lago Sul, Brasília, DF — Curso Modular Ertty Systems</p>
         </div>
       </div>
 
@@ -580,8 +590,8 @@
         </div>
         <div class="timeline-content">
           <p class="timeline-year">1999 – 2005</p>
-          <h3 class="timeline-title">Ortodontista</h3>
-          <p class="timeline-subtitle">IBO — Instituto Brasiliense de Odontologia, Brasília, DF</p>
+          <h3 class="timeline-title" data-i18n="exp.6.title">Ortodontista</h3>
+          <p class="timeline-subtitle" data-i18n="exp.6.sub">IBO — Instituto Brasiliense de Odontologia, Brasília, DF</p>
         </div>
       </div>
 
@@ -598,20 +608,20 @@
   <div class="container">
 
     <div data-animate>
-      <span class="eyebrow">Produção Científica</span>
-      <h2 class="section-heading" id="pesquisa-heading" style="margin-bottom: 2rem;">Pesquisa</h2>
+      <span class="eyebrow" data-i18n="pesq.eyebrow">Produção Científica</span>
+      <h2 class="section-heading" id="pesquisa-heading" style="margin-bottom: 2rem;" data-i18n="pesq.heading">Pesquisa</h2>
     </div>
 
     <div class="research-card glass-panel" data-animate>
       <span class="badge" style="margin-bottom: 0.5rem;">
         <iconify-icon icon="solar:document-bold-duotone" width="14" aria-hidden="true"></iconify-icon>
-        Dissertação de Mestrado · 2017
+        <span data-i18n="pesq.badge">Dissertação de Mestrado · 2017</span>
       </span>
-      <p class="research-quote">
+      <p class="research-quote" data-i18n="pesq.quote">
         "Avaliação das Variáveis Cefalométricas Tridimensionais em Relação ao Tempo de
         Tratamento Ortodôntico"
       </p>
-      <p class="research-meta">
+      <p class="research-meta" data-i18n-html="pesq.meta">
         <strong>Orientador:</strong> Prof. Dr. Jorge Luis Lopes Zeredo &nbsp;·&nbsp;
         Universidade de Brasília (UnB) &nbsp;·&nbsp; Brasília, DF
       </p>
@@ -629,9 +639,9 @@
   <div class="container">
 
     <div data-animate>
-      <span class="eyebrow">Fale Conosco</span>
-      <h2 class="section-heading" id="contato-heading">Agende sua Consulta</h2>
-      <p class="section-sub">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Fale Conosco</span>
+      <h2 class="section-heading" id="contato-heading" data-i18n="contact.heading">Agende sua Consulta</h2>
+      <p class="section-sub" data-i18n="contact.sub">
         Entre em contato para agendar uma avaliação ou tirar dúvidas sobre os tratamentos disponíveis.
       </p>
     </div>
@@ -646,7 +656,7 @@
             <iconify-icon icon="solar:map-point-bold-duotone" width="22" aria-hidden="true"></iconify-icon>
           </div>
           <div>
-            <p class="contact-item-label">Endereço</p>
+            <p class="contact-item-label" data-i18n="contact.address">Endereço</p>
             <p class="contact-item-value">
               Setor Sudoeste Lote 3<br/>
               Centro Clínico, 4/5 Sala 234<br/>
@@ -661,7 +671,7 @@
             <iconify-icon icon="solar:phone-calling-bold-duotone" width="22" aria-hidden="true"></iconify-icon>
           </div>
           <div>
-            <p class="contact-item-label">Telefone / WhatsApp</p>
+            <p class="contact-item-label" data-i18n="contact.phone">Telefone / WhatsApp</p>
             <a href="tel:+5561981733211" class="contact-item-value contact-link">(61) 98173-3211</a>
           </div>
         </div>
@@ -671,7 +681,7 @@
             <iconify-icon icon="solar:letter-bold-duotone" width="22" aria-hidden="true"></iconify-icon>
           </div>
           <div>
-            <p class="contact-item-label">E-mail</p>
+            <p class="contact-item-label" data-i18n="contact.email">E-mail</p>
             <a href="mailto:cristinaabrao@hotmail.com" class="contact-item-value contact-link">cristinaabrao@hotmail.com</a>
           </div>
         </div>
@@ -691,48 +701,55 @@
       <!-- Formulário -->
       <div data-animate>
         <form class="form-card glass-panel" novalidate>
-          <p class="form-title">Envie uma mensagem</p>
+          <p class="form-title" data-i18n="form.title">Envie uma mensagem</p>
 
           <div class="form-fields">
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="nome">Nome</label>
-                <input class="form-input" id="nome" name="from_name" type="text" placeholder="Seu nome completo" autocomplete="name" required/>
+                <label class="form-label" for="nome" data-i18n="form.name.label">Nome</label>
+                <input class="form-input" id="nome" name="from_name" type="text"
+                  data-i18n-ph="form.name.ph" placeholder="Seu nome completo"
+                  autocomplete="name" required/>
               </div>
               <div class="form-group">
-                <label class="form-label" for="telefone">Telefone</label>
-                <input class="form-input" id="telefone" name="phone" type="tel" placeholder="(61) 99999-9999" autocomplete="tel" required/>
+                <label class="form-label" for="telefone" data-i18n="form.phone.label">Telefone</label>
+                <input class="form-input" id="telefone" name="phone" type="tel"
+                  data-i18n-ph="form.phone.ph" placeholder="(61) 99999-9999"
+                  autocomplete="tel" required/>
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="email">E-mail</label>
-              <input class="form-input" id="email" name="from_email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required/>
+              <label class="form-label" for="email" data-i18n="form.email.label">E-mail</label>
+              <input class="form-input" id="email" name="from_email" type="email"
+                data-i18n-ph="form.email.ph" placeholder="seuemail@exemplo.com"
+                autocomplete="email" required/>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="especialidade">Especialidade de Interesse</label>
+              <label class="form-label" for="especialidade" data-i18n="form.spec.label">Especialidade de Interesse</label>
               <select class="form-input form-select" id="especialidade" name="especialidade">
-                <option value="" disabled selected>Selecione uma opção</option>
-                <option value="ortodontia">Ortodontia</option>
-                <option value="harmonizacao">Harmonização Orofacial</option>
-                <option value="implante">Implantodontia</option>
-                <option value="outro">Outro / Geral</option>
+                <option value="" disabled selected data-i18n="form.select">Selecione uma opção</option>
+                <option value="ortodontia" data-i18n="form.opt.ortho">Ortodontia</option>
+                <option value="harmonizacao" data-i18n="form.opt.harm">Harmonização Orofacial</option>
+                <option value="implante" data-i18n="form.opt.impl">Implantodontia</option>
+                <option value="outro" data-i18n="form.opt.other">Outro / Geral</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="mensagem">Mensagem</label>
-              <textarea class="form-input" id="mensagem" name="message" rows="5" placeholder="Descreva brevemente seu caso ou dúvida..."></textarea>
+              <label class="form-label" for="mensagem" data-i18n="form.msg.label">Mensagem</label>
+              <textarea class="form-input" id="mensagem" name="message" rows="5"
+                data-i18n-ph="form.msg.ph" placeholder="Descreva brevemente seu caso ou dúvida..."></textarea>
             </div>
 
             <div class="captcha-wrapper">
               <div class="h-captcha" data-sitekey="fd3a8848-b82e-4ba0-adc2-2b58ed2ac60a"></div>
-              <span class="field-error captcha-error" style="display:none;">Por favor, confirme que você não é um robô.</span>
+              <span class="field-error captcha-error" style="display:none;" data-i18n="val.captcha">Por favor, confirme que você não é um robô.</span>
             </div>
 
             <button type="submit" class="form-submit glass-button-primary">
-              Enviar Mensagem
+              <span data-i18n="form.submit">Enviar Mensagem</span>
               <iconify-icon icon="solar:arrow-right-linear" width="16" aria-hidden="true"></iconify-icon>
             </button>
           </div>
@@ -751,34 +768,34 @@
 
     <div class="footer-brand">
       <span class="footer-brand-name">Dra. Cristina Abrão</span>
-      <p class="footer-brand-sub">
+      <p class="footer-brand-sub" data-i18n-html="footer.sub">
         Especialista em Ortodontia e Harmonização Orofacial.<br/>
         Mais de 30 anos cuidando de sorrisos em Brasília, DF.
       </p>
     </div>
 
-    <nav class="footer-nav" aria-label="Links do rodapé">
-      <p class="footer-nav-title">Navegação</p>
-      <a href="#inicio">Início</a>
-      <a href="#especialidades">Especialidades</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#formacao">Formação</a>
-      <a href="#contato">Contato</a>
+    <nav class="footer-nav" data-i18n-aria="footer.nav.aria" aria-label="Links do rodapé">
+      <p class="footer-nav-title" data-i18n="footer.nav">Navegação</p>
+      <a href="#inicio" data-i18n="nav.inicio">Início</a>
+      <a href="#especialidades" data-i18n="nav.especialidades">Especialidades</a>
+      <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+      <a href="#formacao" data-i18n="nav.formacao">Formação</a>
+      <a href="#contato" data-i18n="nav.contato">Contato</a>
     </nav>
 
     <div class="footer-nav">
-      <p class="footer-nav-title">Especialidades</p>
-      <a href="#especialidades">Ortodontia</a>
-      <a href="#especialidades">Harmonização Orofacial</a>
-      <a href="#especialidades">Implantodontia</a>
+      <p class="footer-nav-title" data-i18n="footer.specs">Especialidades</p>
+      <a href="#especialidades" data-i18n="esp.ortho.title">Ortodontia</a>
+      <a href="#especialidades" data-i18n="esp.harm.title">Harmonização Orofacial</a>
+      <a href="#especialidades" data-i18n="esp.impl.title">Implantodontia</a>
     </div>
 
   </div>
 
   <div class="footer-bottom-wrap">
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2024 Dra. Cristina S. Abrão. Todos os direitos reservados.</p>
-      <p class="footer-cro">CRO-DF · Membro desde 1993</p>
+      <p class="footer-copy" data-i18n="footer.copy">&copy; 2024 Dra. Cristina S. Abrão. Todos os direitos reservados.</p>
+      <p class="footer-cro" data-i18n="footer.cro">CRO-DF · Membro desde 1993</p>
     </div>
   </div>
 </footer>
@@ -788,11 +805,13 @@
   target="_blank"
   rel="noopener noreferrer"
   class="whatsapp-fab"
+  data-i18n-aria="aria.whatsapp"
   aria-label="Falar com a Dra. Cristina no WhatsApp"
 >
   <iconify-icon icon="ri:whatsapp-fill" width="28" height="28"></iconify-icon>
 </a>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
