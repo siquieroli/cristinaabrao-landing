@@ -6,11 +6,7 @@
 
 **Ortodontia · Harmonização Orofacial · Brasília, DF**
 
-[![Deploy](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://landing-psi-ochre.vercel.app/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Ver Site](https://img.shields.io/badge/Ver%20Site-ao%20vivo-black?logo=vercel&logoColor=white)](https://landing-psi-ochre.vercel.app/)
 
 [Ver Site ao Vivo](https://landing-psi-ochre.vercel.app/) · [Agendar Consulta](https://landing-psi-ochre.vercel.app/#contato)
 
@@ -22,99 +18,40 @@
 
 Landing page profissional da **Dra. Cristina S. Abrão**, Mestre em Odontologia (UnB), Especialista em Ortodontia (UNESP) e Harmonização Orofacial (FACSETE), com mais de 30 anos de atuação clínica em Brasília, DF.
 
-O site foi projetado para transmitir autoridade, sofisticação e acolhimento — combinando um design moderno de glassmorphism com animações suaves, acessibilidade e desempenho.
+O site foi projetado para transmitir autoridade, sofisticação e acolhimento — combinando um design moderno com animações suaves e navegação intuitiva em qualquer dispositivo.
 
 ---
 
 ## Design & Funcionalidades
 
-### Interface
+### Visual & Experiência
 
-- **Glassmorphism** — painéis translúcidos com blur e bordas sutis
-- **Hero animado** — blobs flutuantes com gradientes em camadas e parallax suave
-- **Grain noise overlay** — textura fina para profundidade visual
-- **Tipografia Inter** — leitura limpa e hierarquia clara
-- **Paleta cromática** — tons índigo / violeta / teal com gradientes
-- **Totalmente responsivo** — mobile-first, menu hambúrguer animado
+- **Design sofisticado** — painéis translúcidos, gradientes e texturas que transmitem elegância e modernidade
+- **Hero impactante** — apresentação visual marcante com foto, credenciais e chamada para agendamento
+- **Animações fluidas** — transições suaves que tornam a navegação agradável
+- **Tipografia refinada** — hierarquia visual clara e leitura confortável
+- **Paleta exclusiva** — tons índigo, violeta e teal com gradientes harmoniosos
+- **Totalmente responsivo** — experiência perfeita em celular, tablet e desktop
 
-### Seções
+### Conteúdo do Site
 
 | Seção | Conteúdo |
 |---|---|
-| **Hero** | Foto, credenciais, badge de especialidade e CTA de agendamento |
-| **Stats Bar** | 30+ anos de experiência · 3 especializações · MSc UnB |
+| **Hero** | Foto, credenciais, badge de especialidade e botão de agendamento |
+| **Destaques** | 30+ anos de experiência · 3 especializações · MSc UnB |
 | **Especialidades** | Ortodontia · Harmonização Orofacial · Implantodontia |
 | **Sobre** | Trajetória, áreas de interesse e afiliações profissionais |
 | **Formação** | Timeline acadêmica — UFU, UNESP, UnB, FACSETE |
 | **Experiência** | Timeline profissional desde 1999 |
 | **Pesquisa** | Dissertação de Mestrado (UnB, 2017) |
-| **Contato** | Formulário com captcha, mapa integrado e links diretos |
+| **Contato** | Formulário de contato, mapa do consultório e links diretos |
 
-### Integrações
+### Recursos
 
-- **EmailJS** — envio de mensagens do formulário de contato diretamente por e-mail
-- **hCaptcha** — proteção contra bots no formulário
-- **Google Maps embed** — mapa interativo com localização do consultório
-- **WhatsApp flutuante** — botão fixo para contato rápido via WhatsApp
-- **Iconify** — biblioteca de ícones vetoriais renderizados via web component
-
-### Performance & Acessibilidade
-
-- Zero dependências de framework — HTML, CSS e JS puros
-- Animações com **Intersection Observer API** (sem layout thrashing)
-- Atributos `aria-label`, `role` e semântica HTML5 completa
-- Imagens com `loading="lazy"` e `alt` descritivo
-- Fonte carregada com `font-display: swap`
-
----
-
-## Estrutura do Projeto
-
-```
-cristinaabrao-landing/
-├── index.html              # Página principal
-├── css/
-│   └── styles.css          # Estilos (661 linhas) — design system completo
-├── js/
-│   └── main.js             # Lógica — menu, animações, formulário, contato
-└── assets/
-    └── images/
-        ├── logo.svg         # Logotipo vetorial da Dra. Cristina
-        ├── cristina.jpg     # Foto principal (hero)
-        └── about.jpg        # Foto da seção Sobre
-```
-
----
-
-## Rodando Localmente
-
-Não há build step — abra direto no navegador:
-
-```bash
-git clone https://github.com/siquieroli/cristinaabrao-landing.git
-cd cristinaabrao-landing
-
-# Com Python
-python3 -m http.server 3000
-
-# Com Node.js / npx
-npx serve .
-```
-
-Acesse `http://localhost:3000`.
-
----
-
-## Deploy
-
-O site é hospedado na **Vercel** com deploy contínuo a partir da branch `main`.
-
-Cada push dispara um novo deploy automaticamente.
-
-```bash
-# Deploy de produção via Vercel CLI
-vercel --prod
-```
+- **Formulário de contato** — mensagens entregues diretamente por e-mail, com proteção contra spam
+- **Mapa interativo** — localização do consultório integrada à página
+- **Botão WhatsApp** — acesso rápido para contato direto via WhatsApp
+- **Carregamento rápido** — site leve e otimizado para uma experiência ágil
 
 ---
 
